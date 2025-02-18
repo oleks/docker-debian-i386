@@ -1,4 +1,4 @@
-Copyright 2017-2021 Oleks <oleks@oleks.info>
+Copyright 2017-2025 Oleks <oleks@oleks.info>
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions

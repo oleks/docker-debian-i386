@@ -1,4 +1,4 @@
-# Copyright 2017-2021 Oleks <oleks@oleks.info>
+# Copyright 2017-2025 Oleks <oleks@oleks.info>
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions
@@ -28,11 +28,11 @@
 # ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 # POSSIBILITY OF SUCH DAMAGE.
 
-FROM portoleks/debian:v10.7_01
+FROM portoleks/debian:v12.9_01
 
 ARG username=docker
 
-MAINTAINER oleks <oleks@oleks.info>
+LABEL maintainer="Oleks <oleks@oleks.info>"
 
 USER root
 

@@ -1,6 +1,6 @@
 # A Makefile for easier Dockerfile testing
 #
-# Copyright 2017-2021 Oleks <oleks@oleks.info>
+# Copyright 2017-2025 Oleks <oleks@oleks.info>
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions
@@ -30,10 +30,10 @@
 # ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 # POSSIBILITY OF SUCH DAMAGE.
 
-.PHONY: build interact
+.PHONY: build interact push
 
-name:=$(shell basename $(CURDIR))
-version:=10.7_01
+name:=portoleks/debian-i386
+version:=12.9_01
 tag:=$(name):v$(version)
 
 build: Dockerfile Makefile
@@ -44,4 +44,8 @@ build: Dockerfile Makefile
 interact: build Dockerfile Makefile
 	docker run \
 	  --interactive --tty --rm \
+	  $(tag)
+
+push: build Dockerfile Makefile
+	docker push \
 	  $(tag)
